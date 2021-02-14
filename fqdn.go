@@ -41,8 +41,7 @@ func fqdn() (string, error) {
 func FQDN() (string, error) {
 	fqdn, err := fqdn()
 	if fqdn == "" || err != nil {
-		return "", failure.New(err).
-			Msg("impossible to retrieve the FQDN") /////////////////////////////////////////////////////////////////////
+		return "", failure.New(err).Msg("impossible to retrieve the FQDN") /////////////////////////////////////////////
 	}
 
 	return fqdn, nil
